@@ -10,7 +10,7 @@ TODO: screenshot
 
 TODO: put on Logseq marketplace.
 
-If you prefer, you also get this theme by:
+If you prefer, you can also get this theme by:
 
 - Paste this line to your `logseq/custom.css` file:
 - `@import url('https://cdn.jsdelivr.net/gh/tzcl/logseq-monokai@main/custom.css');`
@@ -26,7 +26,7 @@ OR
 
 ## Customising
 
-To customise the theme to your liking, use Developer Tools within Logseq to identify the components you want to style and add the relevant CSS to your `logseq/custom.css` file.
+To customise the theme, use Developer Tools within Logseq to identify the components you want to style and add the relevant CSS to your `logseq/custom.css` file.
 
 ## License
 
