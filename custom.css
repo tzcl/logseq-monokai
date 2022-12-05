@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --bg: #2d2a2e;
+  --bg-alt: #221f22;
+
+  --base0: #19181a;
+  --base1: #1b1b1b;
+  --base2: #212122;
+  --base3: #2b2b2b;
+  --base4: #383239;
+  --base5: #4c4a4d;
+  --base6: #727072;
+  --base7: #c1c0c0;
+  --base8: #fcfcfa;
+
+  --foreground: var(--base8);
+  --current-line: #44475a;
+  --comment: #6272a4;
+
+  --white: var(--foreground);
+  --white-hover: #939293;
+  --grey: var(--base6);
+  --red: #cc6666;
+  --orange: #fc9867;
+  --orange-hover: #fc986780;
+  --yellow: #ffd866;
+  --yellow-hover: #ffd86680;
+  --green: #a9dc76;
+  --green-hover: #a9dc7680;
+  --blue: #81a2be;
+  --blue-hover: #81a2be80;
+  --teal: #78dce8;
+  --teal-hover: #78dce880;
+  --magenta: #ff6188;
+  --magenta-hover: #ff618880;
+  --violet: #ab9df2;
+  --violet-hover: #ab9df280;
+
+  --ls-tag-text-opacity: 0.8;
+  --ls-tag-text-hover-opacity: 0.8;
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 36px;
+  --ls-font-family: "Fira Sans";
+  --ls-font-weight: 300;
+  --ls-font-letter-spacing: 0.002em;
+  --ls-font-line-height: 1.5;
+
+  --ls-border-radius-low: 3px;
+  --ls-border-radius-medium: 6px;
+}
+
+.dark-theme,
+html[data-theme="dark"] {
+  --ls-primary-background-color: var(--bg);
+  --ls-secondary-background-color: var(--bg-alt);
+  --ls-tertiary-background-color: var(--base5);
+  --ls-quaternary-background-color: var(--base4);
+  --ls-quinary-background-color: var(--base2);
+
+  --ls-active-primary-color: var(--foreground);
+  --ls-active-secondary-color: var(--foreground);
+
+  --ls-primary-text-color: var(--foreground);
+  --ls-secondary-text-color: var(--white-hover);
+
+  --ls-search-background-color: var(--bg);
+  --ls-border-color: var(--comment);
+  --ls-secondary-border-color: var(--ls-border-color);
+  --ls-menu-hover-color: var(--base4);
+  --ls-table-tr-even-background-color: var(--base4);
+
+  --ls-head-text-color: var(--foreground);
+  --ls-title-text-color: var(--foreground);
+
+  --ls-link-text-color: var(--violet);
+  --ls-link-text-hover-color: var(--violet-hover);
+
+  --ls-link-ref-text-color: var(--green);
+  --ls-link-ref-text-hover-color: var(--green-hover);
+  --ls-block-ref-link-text-color: var(--teal);
+
+  --ls-tag-text-color: var(--yellow);
+  --ls-tag-text-opacity: 1;
+  --ls-tag-text-hover-color: var(--yellow-hover);
+
+  --ls-block-bullet-border-color: var(--current-line);
+  --ls-block-bullet-color: var(--foreground);
+  --ls-block-highlight-color: var(--current-line);
+  --ls-block-properties-background-color: var(--base4);
+  --ls-page-properties-background-color: var(--base2);
+
+  --ls-page-checkbox-color: var(--base5);
+  --ls-page-checkbox-border-color: var(--comment);
+
+  --ls-page-blockquote-color: var(--foreground);
+  --ls-page-blockquote-bg-color: var(--base4);
+  --ls-page-blockquote-border-color: var(--blue);
+
+  --ls-page-inline-code-color: var(--yellow);
+  --ls-page-inline-code-bg-color: var(--bg);
+
+  --ls-scrollbar-background-color: var(--base5);
+  --ls-scrollbar-foreground-color: var(--base6);
+  --ls-scrollbar-thumb-hover-color: var(--base4);
+
+  --ls-icon-color: var(--white-hover);
+  --ls-search-icon-color: var(--white-hover);
+  --ls-a-chosen-bg: var(--base4);
+  --ls-right-sidebar-code-bg-color: var(--base4);
+  --ls-selection-background-color: var(--comment);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-guideline-color: var(--ls-border-color);
+
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-primary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: var(--ls-tertiary-background-color);
+  --color-level-5: var(--ls-quinary-background-color);
+}
+
+html,
+body {
+  font-weight: var(--ls-font-weight-light);
+  letter-spacing: var(--ls-font-letter-spacing);
+  line-height: var(--ls-font-line-height);
+  font-size: var(--ls-page-text-size);
+}
+
+.page-reference .bracket {
+  color: var(--ls-border-color);
+  opacity: 0.8;
+}
+
+html[data-theme="dark"] img {
+  background-color: white;
+}
+
+html[data-theme="dark"] .block-ref:hover {
+  color: var(--teal-hover);
+  border-bottom-color: var(--teal-hover);
+}
+
+html[data-theme="dark"] .external-link {
+  color: var(--teal);
+}
+
+html[data-theme="dark"] .external-link:hover {
+  color: var(--teal-hover);
+}
+
+html[data-theme="dark"] .inline i {
+  color: var(--orange);
+}
+
+html[data-theme="dark"] .icon i {
+  color: white;
+}
+
+html[data-theme="dark"] .inline b {
+  color: var(--magenta);
+}
+
+html[data-theme="dark"] a.block-marker {
+  color: var(--magenta);
+}
+
+html[data-theme="dark"] a.block-marker:hover {
+  color: var(--magenta-hover);
+}
+
+/*
+ *
+ * Styling CodeMirror
+ *
+ *
+*/
+
+html[data-theme="dark"] .cm-s-solarized.CodeMirror {
+  font-family: "FiraCode Nerd Font", "Fira Code", monospace;
+  background: var(--bg-alt);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  color: var(--white);
+}
+
+html[data-theme="dark"] .cm-s-solarized div.CodeMirror-selected {
+  background: var(--current-line);
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-line::selection,
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-line > span::selection,
+html[data-theme="dark"]
+  .cm-s-solarized
+  .CodeMirror-line
+  > span
+  > span::selection {
+  background: var(--current-line);
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-line > span::-moz-selection,
+html[data-theme="dark"]
+  .cm-s-solarized
+  .CodeMirror-line
+  > span
+  > span::-moz-selection {
+  background: var(--current-line);
+}
+
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-gutters {
+  background-color: transparent;
+  border-right: 0px;
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-guttermarker {
+  color: var(--white);
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-guttermarker-subtle {
+  color: var(--grey);
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-linenumber {
+  color: var(--grey);
+}
+
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-cursor {
+  border-left: solid thin var(--white);
+}
+
+html[data-theme="dark"] .cm-s-solarized span.cm-comment {
+  color: var(--comment);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-atom {
+  color: var(--violet);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-number {
+  color: var(--violet);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-attribute {
+  color: var(--green-hover);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-def {
+  color: var(--yellow-hover);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-tag {
+  color: var(--magenta-hover);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-type {
+  color: var(--teal-hover);
+}
+
+html[data-theme="dark"] .cm-s-solarized span.cm-property,
+.cm-s-solarized span.cm-attribute {
+  color: var(--green);
+}
+
+html[data-theme="dark"] .cm-s-solarized span.cm-keyword {
+  color: var(--magenta);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-builtin {
+  color: var(--teal);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-string {
+  color: var(--yellow);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-variable {
+  color: var(--teal);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-variable-2 {
+  color: var(--teal);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-variable-3,
+.cm-s-solarized span.cm-type {
+  color: var(--teal);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-def {
+  color: var(--orange);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-bracket {
+  color: var(--white);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-tag {
+  color: var(--magenta);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-header {
+  color: var(--violet);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-link {
+  color: var(--violet);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-error {
+  background: var(--magenta);
+  color: var(--white);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-meta {
+  color: var(--green);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-operator {
+  color: var(--blue);
+}
+
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-activeline-background {
+  background: var(--base3);
+}
+html[data-theme="dark"] .cm-s-solarized .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: var(--white) !important;
+}
