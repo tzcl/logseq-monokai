@@ -2,13 +2,13 @@
 
 # Monokai for [Logseq](http://logseq.com)
 
-> Dark theme for [Logseq](http://logseq.com) inspired by [Monokai](https://monokai.pro/) and [Dracula](https://draculatheme.com/).
+> A dark theme for [Logseq](http://logseq.com) inspired by [Monokai](https://monokai.pro/) and [Dracula](https://draculatheme.com/).
 
-TODO: screenshot
+<img src="screenshot.png" alt="Screenshot">
 
 ## Install
 
-TODO: put on Logseq marketplace.
+You can install this theme from the Logseq marketplace.
 
 If you prefer, you can also get this theme by:
 
