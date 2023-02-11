@@ -4,7 +4,7 @@
 
 > A dark theme for [Logseq](http://logseq.com) inspired by [Monokai](https://monokai.pro/) and [Dracula](https://draculatheme.com/).
 
-<img src="screenshot.png" alt="Screenshot">
+<img src="screenshot.png" alt="Screenshot" width="830" height="467">
 
 ## Install
 
