@@ -169,6 +169,10 @@ html[data-theme="dark"] a.block-marker:hover {
   color: var(--magenta-hover);
 }
 
+html[data-theme="dark"] :not(pre):not(mark) > code {
+  padding: 0 !important;
+}
+
 /*
  *
  * Styling CodeMirror
@@ -219,6 +223,7 @@ html[data-theme="dark"] .cm-s-solarized .CodeMirror-guttermarker-subtle {
 }
 html[data-theme="dark"] .cm-s-solarized .CodeMirror-linenumber {
   color: var(--grey);
+  background-color: var(--bg-alt);
 }
 
 html[data-theme="dark"] .cm-s-solarized .CodeMirror-cursor {
@@ -295,6 +300,9 @@ html[data-theme="dark"] .cm-s-solarized span.cm-meta {
 }
 html[data-theme="dark"] .cm-s-solarized span.cm-operator {
   color: var(--blue);
+}
+html[data-theme="dark"] .cm-s-solarized span.cm-qualifier {
+  color: var(--yellow);
 }
 
 html[data-theme="dark"] .cm-s-solarized .CodeMirror-activeline-background {
