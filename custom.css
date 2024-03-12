@@ -174,11 +174,10 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
-html[data-theme="dark"] .content mark{
-  background:var(--yellow-highlight);
-  color:var(--base2)
+html[data-theme="dark"] .content mark {
+  background: var(--yellow-highlight);
+  color: var(--base2);
 }
-
 /*
  *
  * Styling CodeMirror
