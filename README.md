@@ -31,6 +31,10 @@ OR
 
 To customise the theme, use Developer Tools within Logseq to identify the components you want to style and add the relevant CSS to your `logseq/custom.css` file.
 
+## Publishing
+
+To publish a new version of this theme, click "Draft a new release" under the Releases tab.
+
 ## License
 
 [MIT License](./LICENSE)
