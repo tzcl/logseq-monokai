@@ -4,8 +4,8 @@
 
 > A dark theme for [Logseq](http://logseq.com) inspired by [Monokai](https://monokai.pro/) and [Dracula](https://draculatheme.com/).
 
-> [!WARNING]
-> This is not compatible with Logseq 0.10.4. If you want to keep using this theme, stay on 0.10.3.
+> \[!NOTE\]
+> Choosing an account colour will override parts of this theme.
 
 <img src="screencap.png" alt="Screenshot">
 
