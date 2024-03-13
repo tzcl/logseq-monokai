@@ -2,7 +2,7 @@
   "name": "logseq-monokai",
   "description": "A dark theme for Logseq inspired by Monokai and Dracula.",
   "author": "Toby Law",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repo": "tzcl/logseq",
   "logseq": {
     "id": "monokai",

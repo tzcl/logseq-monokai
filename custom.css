@@ -14,17 +14,17 @@
   --base7: #c1c0c0;
   --base8: #fcfcfa;
 
-  --foreground: var(--base8);
   --current-line: #44475a;
   --comment: #6272a4;
 
-  --white: var(--foreground);
+  --white: var(--base8);
   --white-hover: #939293;
   --grey: var(--base6);
   --red: #cc6666;
   --orange: #fc9867;
   --orange-hover: #fc986780;
   --yellow: #ffd866;
+  --yellow-highlight: #fef3ac;
   --yellow-hover: #ffd86680;
   --green: #a9dc76;
   --green-hover: #a9dc7680;
@@ -52,6 +52,7 @@
 
 .dark-theme,
 html[data-theme="dark"] {
+  --foreground: var(--base8);
   --ls-primary-background-color: var(--bg);
   --ls-secondary-background-color: var(--bg-alt);
   --ls-tertiary-background-color: var(--base5);
@@ -133,7 +134,7 @@ body {
 }
 
 html[data-theme="dark"] img {
-  background-color: white;
+  background-color: var(--white);
 }
 
 html[data-theme="dark"] .block-ref:hover {
@@ -154,7 +155,7 @@ html[data-theme="dark"] .inline i {
 }
 
 html[data-theme="dark"] .icon i {
-  color: white;
+  color: var(--white);
 }
 
 html[data-theme="dark"] .inline b {
@@ -173,14 +174,14 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
-/*
- *
- * Styling CodeMirror
- *
- *
-*/
+html[data-theme="dark"] .content mark {
+  background: var(--yellow-highlight);
+  color: var(--base2);
+}
 
-html[data-theme="dark"] .cm-s-solarized.CodeMirror {
+/* Styling CodeMirror */
+
+html[data-theme="dark"] .cm-s-lsradix.CodeMirror {
   font-family: "FiraCode Nerd Font", "Fira Code", monospace;
   background: var(--bg-alt);
   box-shadow: none;
@@ -189,126 +190,126 @@ html[data-theme="dark"] .cm-s-solarized.CodeMirror {
   color: var(--white);
 }
 
-html[data-theme="dark"] .cm-s-solarized div.CodeMirror-selected {
+html[data-theme="dark"] .cm-s-lsradix div.CodeMirror-selected {
   background: var(--current-line);
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-line::selection,
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-line > span::selection,
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-line::selection,
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-line > span::selection,
 html[data-theme="dark"]
-  .cm-s-solarized
+  .cm-s-lsradix
   .CodeMirror-line
   > span
   > span::selection {
   background: var(--current-line);
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-line::-moz-selection,
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-line > span::-moz-selection,
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-line > span::-moz-selection,
 html[data-theme="dark"]
-  .cm-s-solarized
+  .cm-s-lsradix
   .CodeMirror-line
   > span
   > span::-moz-selection {
   background: var(--current-line);
 }
 
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-gutters {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-gutters {
   background-color: transparent;
   border-right: 0px;
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-guttermarker {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-guttermarker {
   color: var(--white);
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-guttermarker-subtle {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-guttermarker-subtle {
   color: var(--grey);
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-linenumber {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-linenumber {
   color: var(--grey);
   background-color: var(--bg-alt);
 }
 
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-cursor {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-cursor {
   border-left: solid thin var(--white);
 }
 
-html[data-theme="dark"] .cm-s-solarized span.cm-comment {
+html[data-theme="dark"] .cm-s-lsradix span.cm-comment {
   color: var(--comment);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-atom {
+html[data-theme="dark"] .cm-s-lsradix span.cm-atom {
   color: var(--violet);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-number {
+html[data-theme="dark"] .cm-s-lsradix span.cm-number {
   color: var(--violet);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-attribute {
+html[data-theme="dark"] .cm-s-lsradix span.cm-comment.cm-attribute {
   color: var(--green-hover);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-def {
+html[data-theme="dark"] .cm-s-lsradix span.cm-comment.cm-def {
   color: var(--yellow-hover);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-tag {
+html[data-theme="dark"] .cm-s-lsradix span.cm-comment.cm-tag {
   color: var(--magenta-hover);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-comment.cm-type {
+html[data-theme="dark"] .cm-s-lsradix span.cm-comment.cm-type {
   color: var(--teal-hover);
 }
 
-html[data-theme="dark"] .cm-s-solarized span.cm-property,
-.cm-s-solarized span.cm-attribute {
+html[data-theme="dark"] .cm-s-lsradix span.cm-property,
+.cm-s-lsradix span.cm-attribute {
   color: var(--green);
 }
 
-html[data-theme="dark"] .cm-s-solarized span.cm-keyword {
+html[data-theme="dark"] .cm-s-lsradix span.cm-keyword {
   color: var(--magenta);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-builtin {
+html[data-theme="dark"] .cm-s-lsradix span.cm-builtin {
   color: var(--teal);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-string {
+html[data-theme="dark"] .cm-s-lsradix span.cm-string {
   color: var(--yellow);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-variable {
+html[data-theme="dark"] .cm-s-lsradix span.cm-variable {
   color: var(--teal);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-variable-2 {
+html[data-theme="dark"] .cm-s-lsradix span.cm-variable-2 {
   color: var(--teal);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-variable-3,
-.cm-s-solarized span.cm-type {
+html[data-theme="dark"] .cm-s-lsradix span.cm-variable-3,
+.cm-s-lsradix span.cm-type {
   color: var(--teal);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-def {
+html[data-theme="dark"] .cm-s-lsradix span.cm-def {
   color: var(--orange);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-bracket {
+html[data-theme="dark"] .cm-s-lsradix span.cm-bracket {
   color: var(--white);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-tag {
+html[data-theme="dark"] .cm-s-lsradix span.cm-tag {
   color: var(--magenta);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-header {
+html[data-theme="dark"] .cm-s-lsradix span.cm-header {
   color: var(--violet);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-link {
+html[data-theme="dark"] .cm-s-lsradix span.cm-link {
   color: var(--violet);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-error {
+html[data-theme="dark"] .cm-s-lsradix span.cm-error {
   background: var(--magenta);
   color: var(--white);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-meta {
+html[data-theme="dark"] .cm-s-lsradix span.cm-meta {
   color: var(--green);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-operator {
+html[data-theme="dark"] .cm-s-lsradix span.cm-operator {
   color: var(--blue);
 }
-html[data-theme="dark"] .cm-s-solarized span.cm-qualifier {
+html[data-theme="dark"] .cm-s-lsradix span.cm-qualifier {
   color: var(--yellow);
 }
 
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-activeline-background {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-activeline-background {
   background: var(--base3);
 }
-html[data-theme="dark"] .cm-s-solarized .CodeMirror-matchingbracket {
+html[data-theme="dark"] .cm-s-lsradix .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: var(--white) !important;
 }
