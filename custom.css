@@ -14,17 +14,17 @@
   --base7: #c1c0c0;
   --base8: #fcfcfa;
 
-  --foreground: var(--base8);
   --current-line: #44475a;
   --comment: #6272a4;
 
-  --white: var(--foreground);
+  --white: white;
   --white-hover: #939293;
   --grey: var(--base6);
   --red: #cc6666;
   --orange: #fc9867;
   --orange-hover: #fc986780;
   --yellow: #ffd866;
+  --yellow-highlight: #fef3ac;
   --yellow-hover: #ffd86680;
   --green: #a9dc76;
   --green-hover: #a9dc7680;
@@ -52,6 +52,7 @@
 
 .dark-theme,
 html[data-theme="dark"] {
+  --foreground: var(--base8);
   --ls-primary-background-color: var(--bg);
   --ls-secondary-background-color: var(--bg-alt);
   --ls-tertiary-background-color: var(--base5);
@@ -133,7 +134,7 @@ body {
 }
 
 html[data-theme="dark"] img {
-  background-color: white;
+  background-color: var(--white);
 }
 
 html[data-theme="dark"] .block-ref:hover {
@@ -154,7 +155,7 @@ html[data-theme="dark"] .inline i {
 }
 
 html[data-theme="dark"] .icon i {
-  color: white;
+  color: var(--white);
 }
 
 html[data-theme="dark"] .inline b {
@@ -173,6 +174,10 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
+html[data-theme="dark"] .content mark {
+  background: var(--yellow-highlight);
+  color: var(--base2);
+}
 /*
  *
  * Styling CodeMirror
