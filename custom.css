@@ -174,9 +174,15 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
-html[data-theme="dark"] .content mark {
-  background: var(--yellow-highlight);
+html[data-theme="dark"] .inline mark,
+html[data-theme="dark"] .inline mark i b, 
+html[data-theme="dark"] .inline mark i, 
+html[data-theme="dark"] .inline mark b {
   color: var(--base2);
+}
+
+html[data-theme="dark"] .inline mark {
+  background: var(--yellow-highlight);
 }
 
 /* Styling CodeMirror */
