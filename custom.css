@@ -180,7 +180,7 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
 html[data-theme="dark"] .inline mark i b, 
 html[data-theme="dark"] .inline mark i, 
 html[data-theme="dark"] .inline mark b {
-  color: var(--base2);
+  color: var(--ls-page-mark-color);
 }
 
 /* Styling CodeMirror */
