@@ -98,6 +98,9 @@ html[data-theme="dark"] {
   --ls-page-blockquote-bg-color: var(--base4);
   --ls-page-blockquote-border-color: var(--blue);
 
+  --ls-page-mark-color: var(--base2);
+  --ls-page-mark-bg-color: var(--yellow-highlight);
+
   --ls-page-inline-code-color: var(--yellow);
   --ls-page-inline-code-bg-color: var(--bg);
 
@@ -179,10 +182,6 @@ html[data-theme="dark"] .inline mark i b,
 html[data-theme="dark"] .inline mark i, 
 html[data-theme="dark"] .inline mark b {
   color: var(--base2);
-}
-
-html[data-theme="dark"] .inline mark {
-  background: var(--yellow-highlight);
 }
 
 /* Styling CodeMirror */
