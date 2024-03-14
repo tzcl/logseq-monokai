@@ -177,7 +177,6 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
-html[data-theme="dark"] .inline mark,
 html[data-theme="dark"] .inline mark i b, 
 html[data-theme="dark"] .inline mark i, 
 html[data-theme="dark"] .inline mark b {
