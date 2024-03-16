@@ -177,12 +177,6 @@ html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
 }
 
-html[data-theme="dark"] .inline mark i b, 
-html[data-theme="dark"] .inline mark i, 
-html[data-theme="dark"] .inline mark b {
-  color: var(--ls-page-mark-color);
-}
-
 /* Styling CodeMirror */
 
 html[data-theme="dark"] .cm-s-lsradix.CodeMirror {
