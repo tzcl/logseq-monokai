@@ -98,6 +98,9 @@ html[data-theme="dark"] {
   --ls-page-blockquote-bg-color: var(--base4);
   --ls-page-blockquote-border-color: var(--blue);
 
+  --ls-page-mark-color: var(--base2);
+  --ls-page-mark-bg-color: var(--yellow-highlight);
+
   --ls-page-inline-code-color: var(--yellow);
   --ls-page-inline-code-bg-color: var(--bg);
 
@@ -172,11 +175,6 @@ html[data-theme="dark"] a.block-marker:hover {
 
 html[data-theme="dark"] :not(pre):not(mark) > code {
   padding: 0 !important;
-}
-
-html[data-theme="dark"] .content mark {
-  background: var(--yellow-highlight);
-  color: var(--base2);
 }
 
 /* Styling CodeMirror */
